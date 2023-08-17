@@ -182,7 +182,7 @@ int main() {
         fgets(command, sizeof(command), stdin);
         command[strcspn(command, "\n")] = '\0'; // Remove newline character
 
-        if (strcmp(command , "add")==0||strcmp(command,"ADD")==0||strcmp(command,"Add")==0||strcmp(command,"aDd")==0||strcmp(command,"adD")==0||strcmp(command,"ADd")==0||strcmp(command,"AdD")==0||strcmp(command,"aDD")==0||strcmp(command,"add song")==0||strcmp(command,"add the song")==0||strcmp(command,"ADD SONG")==0||strcmp(command,"ADD THE SONG")==0) {
+        if (strcmp(command , "add")==0||strcmp(command,"ADD")==0||strcmp(command,"Add")==0||strcmp(command,"add song")==0||strcmp(command,"add the song")==0||strcmp(command,"ADD SONG")==0||strcmp(command,"ADD THE SONG")==0) {
             printf("Enter the song name to add: ");
             fgets(song_name, sizeof(song_name), stdin);
             song_name[strcspn(song_name, "\n")] = '\0'; // Remove newline character
